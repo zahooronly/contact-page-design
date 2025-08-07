@@ -1,8 +1,6 @@
 body {
-  width: 1424px;
   padding: 0;
   margin: 0;
-  height: 100vh;
 }
 
 main {
@@ -25,12 +23,30 @@ form {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  border-radius: 16px;
+  border: 1px solid #eaecf0;
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.5) 99.5%);
+
+  /* Card Shadow */
+  box-shadow: 0 0.882px 1.568px 0 rgba(38, 44, 59, 0.02),
+    0 2.119px 3.767px 0 rgba(38, 44, 59, 0.03),
+    0 3.99px 7.093px 0 rgba(38, 44, 59, 0.03),
+    0 7.117px 12.653px 0 rgba(38, 44, 59, 0.04),
+    0 13.312px 23.666px 0 rgba(38, 44, 59, 0.05),
+    0 31.865px 56.648px 0 rgba(38, 44, 59, 0.07);
 }
 
 .input-part {
   display: flex;
+  gap: 32px;
 }
-
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  flex: 1 0 0;
+}
 .info-input {
   display: flex;
   padding: 10px 14px;
@@ -43,17 +59,13 @@ form {
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 .info-input input {
-  flex: 1 0 0;
-  color: var(--Gray-400, #8f95b2);
-
-  /* Modal placeholder */
   font-family: "Proxima Nova";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
 }
-
+/* text area: your message */
 .message {
   display: flex;
   height: 168px;
@@ -63,11 +75,31 @@ form {
   flex-shrink: 0;
   align-self: stretch;
 }
-input[type="text"],
-input[type="email"] {
-  padding: 20px 10px;
+
+textarea {
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  height: 140px;
+  padding: 10px 14px;
+  align-items: flex-start;
+  gap: 8px;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 8px;
+  background: #fcfcfd;
+  box-shadow: 0 0 0 1px rgba(103, 110, 118, 0.16),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
+input,
+textarea {
+  outline: none;
+  border: none;
+}
 /* Consent Part */
 
 .consent-part {
@@ -78,8 +110,6 @@ input[type="email"] {
 }
 .consent-part label {
   color: var(--Primary-1000, #0a254d);
-
-  /* Button Secondary(Regular) */
   font-family: "Proxima Nova";
   font-size: 16px;
   font-style: normal;
