@@ -51,17 +51,7 @@ form {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
-}
-input {
-  color: var(--Gray-400, #8f95b2);
-
-  /* Modal placeholder */
-  font-family: "Proxima Nova";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 
 .message {
