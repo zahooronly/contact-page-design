@@ -35,7 +35,7 @@ form {
 .input-part {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .info {
@@ -48,17 +48,19 @@ form {
 
 .info div {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .info-input {
   display: flex;
+  align-items: start;
+  gap: 0.5rem;
   flex-direction: row;
   padding: 10px 14px;
-  align-items: center;
-  gap: 8px;
-  align-self: stretch;
   border-radius: 8px;
-  background: var(--Gray-25, #fcfcfd);
+  background: #fcfcfd;
   box-shadow: 0 0 0 1px rgba(103, 110, 118, 0.16),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
