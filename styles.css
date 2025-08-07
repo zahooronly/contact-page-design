@@ -22,12 +22,23 @@ form {
   border: 1px solid black;
 }
 
-.input-part {
-  display: flex;
-}
+/* Submit Button */
 
-.info div,
-.message {
+.submit {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.submit button {
+  padding: 24px 200px;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    rgba(78, 132, 229, 1),
+    rgba(97, 186, 255, 1)
+  );
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  /* font-style: ; */
 }
