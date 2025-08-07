@@ -5,14 +5,13 @@ body {
 
 main {
   display: flex;
-  width: 1424px;
-  padding: 50px 33px;
+  padding: 3.125rem 2.0625rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 56px;
   background: linear-gradient(190deg, #f5fafb 47.27%, #e9f6f9 85.77%);
-  border: 1px solid black;
+  margin: auto;
 }
 
 form {
@@ -20,14 +19,11 @@ form {
   width: 60.625rem;
   padding: 2rem;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
   gap: 2rem;
   border-radius: 16px;
   border: 1px solid #eaecf0;
   background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.5) 99.5%);
-
-  /* Card Shadow */
   box-shadow: 0 0.882px 1.568px 0 rgba(38, 44, 59, 0.02),
     0 2.119px 3.767px 0 rgba(38, 44, 59, 0.03),
     0 3.99px 7.093px 0 rgba(38, 44, 59, 0.03),
@@ -38,17 +34,25 @@ form {
 
 .input-part {
   display: flex;
-  gap: 32px;
+  justify-content: space-between;
+  gap: 2rem;
 }
+
 .info {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  flex: 1 0 0;
+  gap: 1.5rem;
+  width: 50%;
 }
+
+.info div {
+  width: 100%;
+}
+
 .info-input {
   display: flex;
+  flex-direction: row;
   padding: 10px 14px;
   align-items: center;
   gap: 8px;
@@ -58,6 +62,7 @@ form {
   box-shadow: 0 0 0 1px rgba(103, 110, 118, 0.16),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
+
 .info-input input {
   font-family: "Proxima Nova";
   font-size: 16px;
@@ -65,7 +70,9 @@ form {
   font-weight: 400;
   line-height: 24px;
 }
+
 /* text area: your message */
+
 .message {
   display: flex;
   height: 168px;
@@ -74,6 +81,7 @@ form {
   gap: 8px;
   flex-shrink: 0;
   align-self: stretch;
+  width: 50%;
 }
 
 textarea {
@@ -102,19 +110,22 @@ textarea {
 }
 /* Consent Part */
 
-.consent-part {
+.checkbox {
   display: flex;
   padding: 4px 0;
   align-items: flex-start;
   gap: 8px;
 }
-.consent-part label {
-  color: var(--Primary-1000, #0a254d);
+.checkbox label {
   font-family: "Proxima Nova";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 125% */
+  line-height: 20px;
+}
+.checkbox input {
+  width: 20px;
+  height: 20px;
 }
 
 /* Submit Button */
