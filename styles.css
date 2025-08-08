@@ -58,9 +58,9 @@ form {
   width: 50%;
 }
 
-.info div {
-  width: 100%;
+.input-container {
   display: flex;
+  width: 100%;
   flex-direction: column;
   gap: 0.5rem;
 }
@@ -68,6 +68,7 @@ form {
 .info-input {
   display: flex;
   align-items: start;
+  align-items: center;
   gap: 0.5rem;
   flex-direction: row;
   padding: 10px 14px;
@@ -79,8 +80,8 @@ form {
 
 .info-input input {
   font-size: 16px;
-  background: #000;
-  flex: 1 0 0;
+  width: 100%;
+  padding: 8px 10px;
 }
 
 /* text area: your message */
@@ -124,9 +125,9 @@ textarea {
 
 .checkbox {
   display: flex;
-  padding: 4px 0;
-  align-items: flex-start;
-  gap: 8px;
+  padding: 0.25rem 0;
+  align-items: center;
+  gap: 0.5rem;
 }
 .checkbox label {
   font-family: "Proxima Nova";
@@ -151,6 +152,7 @@ textarea {
   padding: 12px 100px;
   border-radius: 8px;
   background: linear-gradient(127deg, #4e84e5 31.39%, #61baff 102.17%);
+  font-family: "Proxima Nova";
   border: none;
   color: white;
   font-weight: 600;
