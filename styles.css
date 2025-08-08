@@ -90,7 +90,7 @@ form {
 }
 
 textarea {
-  height: 100%; /* it's perfect on 85% */
+  height: calc(100% - 1.75rem);
   font-size: 16px;
   padding: 10px 14px;
   border-radius: 8px;
@@ -98,15 +98,15 @@ textarea {
   background: #fcfcfd;
   box-shadow: 0 0 0 1px rgba(103, 110, 118, 0.16),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  }
-  
-  /* input combine styles */
-  
-  input,
-  textarea {
-    outline: none;
-    border: none;
-    transition-duration: 0.2s;
+}
+
+/* input combine styles */
+
+input,
+textarea {
+  outline: none;
+  border: none;
+  transition-duration: 0.2s;
 }
 
 input[type="email"]:focus,
