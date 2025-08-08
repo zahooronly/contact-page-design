@@ -43,7 +43,6 @@ form {
 
 .info {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
   gap: 1.5rem;
   width: 50%;
@@ -56,39 +55,32 @@ form {
   justify-content: center;
   align-items: center;
   position: absolute;
+  padding-left: 0.88rem;
+  padding-top: 0.66rem;
 }
 
 .info-input input {
   font-size: 16px;
   width: 100%;
   background-color: #fcfcfd;
-  padding-left: 2rem;
-}
-
-.input-container {
-  /* display: flex;
-  width: 100%;
-  flex-direction: column;
-  gap: 0.5rem; */
-  width: 100%;
-}
-
-.info-input {
-  /* display: flex;
-  align-items: start;
-  align-items: center;
-  gap: 0.5rem;
-  flex-direction: row; */
-  position: relative;
-  padding: 0.88rem 0.63rem;
+  padding: 0.88rem 2.63rem;
   border-radius: 8px;
   background: #fcfcfd;
   box-shadow: 0 0 0 1px rgba(103, 110, 118, 0.16),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
+.input-container {
+  width: 100%;
+}
+
+.info-input {
+  position: relative;
+}
+
 /* text area: your message */
 
+.input-container label,
 .message label {
   display: block;
   margin-bottom: 0.5rem;
@@ -98,7 +90,7 @@ form {
 }
 
 textarea {
-  height: 100%;
+  height: 100%; /* it's perfect on 85% */
   font-size: 16px;
   padding: 10px 14px;
   border-radius: 8px;
@@ -106,13 +98,31 @@ textarea {
   background: #fcfcfd;
   box-shadow: 0 0 0 1px rgba(103, 110, 118, 0.16),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  /* input combine styles */
+  
+  input,
+  textarea {
+    outline: none;
+    border: none;
+    transition-duration: 0.2s;
 }
 
-input,
-textarea {
-  outline: none;
-  border: none;
+input[type="email"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+  box-shadow: 0 0 0 1px rgba(38, 39, 41, 0.329),
+    0 1px 1px 0 rgba(0, 0, 0, 0.678);
+  transition-duration: 0.2s;
 }
+
+input:hover,
+textarea:hover {
+  transition-duration: 0.2s;
+  background-color: #38343421;
+}
+
 /* Consent Part */
 
 .checkbox {
@@ -139,7 +149,7 @@ textarea {
   justify-content: center;
   align-items: center;
 }
-.submit button {
+.button {
   padding: 12px 100px;
   border-radius: 8px;
   background: linear-gradient(127deg, #4e84e5 31.39%, #61baff 102.17%);
@@ -147,4 +157,14 @@ textarea {
   color: white;
   font-weight: 600;
   font-size: 16px;
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  background: linear-gradient(127deg, #5480d1 31.39%, #1298ff 102.17%);
+  transform: scale(1.02);
+}
+
+.button:active {
+  transform: scale(1);
 }
