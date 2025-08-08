@@ -7,6 +7,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-size: 16px;
 }
 
 main {
@@ -17,9 +18,9 @@ main {
 }
 
 form {
+  width: 60.625rem;
   margin: auto;
   display: flex;
-  width: 60.625rem;
   padding: 2rem;
   flex-direction: column;
   justify-content: start;
@@ -38,6 +39,7 @@ form {
 .input-part {
   display: flex;
   justify-content: space-between;
+  /* flex-wrap: wrap; */
   gap: 3rem;
 }
 
@@ -104,6 +106,7 @@ textarea {
 
 input,
 textarea {
+  font-family: "Roboto", sans-serif;
   outline: none;
   border: none;
   transition-duration: 0.2s;
