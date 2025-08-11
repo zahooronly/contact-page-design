@@ -70,7 +70,6 @@ form {
   background-color: #fcfcfd;
   padding: 0.88rem 2.63rem;
   border-radius: 8px;
-  background: #fcfcfd;
   box-shadow: 0 0 0 1px rgba(103, 110, 118, 0.16),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
@@ -100,7 +99,6 @@ textarea {
   padding: 10px 14px;
   border-radius: 8px;
   width: 100%;
-  background: #fcfcfd;
   box-shadow: 0 0 0 1px rgba(103, 110, 118, 0.16),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
@@ -113,20 +111,23 @@ textarea {
   outline: none;
   border: none;
   transition-duration: 0.2s;
-}
-
-input[type="email"]:focus,
-input[type="text"]:focus,
-textarea:focus {
-  box-shadow: 0 0 0 1px rgba(38, 39, 41, 0.329),
-    0 1px 1px 0 rgba(0, 0, 0, 0.678);
-  transition-duration: 0.2s;
+  background: #fcfcfd;
 }
 
 input:hover,
 textarea:hover {
   transition-duration: 0.2s;
-  background-color: #38343421;
+  background-color: #6fc0fd2c;
+
+  box-shadow: 0 0 0 1px #5480d18e, 0 1px 1px 0 #1298ff83;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+  box-shadow: 0 0 0 3px #5480d18e, 0 1px 1px 0 #1298ff83;
+  transition-duration: 0.2s;
+  background: #fcfcfd;
 }
 
 /* Consent Part */
@@ -170,9 +171,9 @@ textarea:hover {
 
 .button:hover {
   background: linear-gradient(127deg, #5480d1 31.39%, #1298ff 102.17%);
-  transform: scale(1.02);
+  box-shadow: 0 0 0 1px #5480d18e, 0 1px 1px 0 #1298ff83;
 }
 
 .button:active {
-  transform: scale(1);
+  box-shadow: 0 0 0 3px #5480d18e, 0 1px 1px 0 #1298ff83;
 }
