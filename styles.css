@@ -18,7 +18,8 @@ main {
 }
 
 form {
-  width: 60.625rem;
+  max-width: 60.625rem;
+  width: 100%;
   margin: auto;
   padding: 2rem;
   display: flex;
@@ -48,6 +49,7 @@ form {
   flex-direction: column;
   gap: 1.5rem;
   flex: 1;
+  min-width: 50%;
 }
 
 /* Input Field Styling */
@@ -89,6 +91,8 @@ form {
 }
 .message {
   flex: 1;
+  /* max-width: 50%; */
+  width: 100%;
 }
 
 textarea {
