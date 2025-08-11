@@ -58,8 +58,10 @@ form {
   justify-content: center;
   align-items: center;
   position: absolute;
-  padding-left: 0.88rem;
-  padding-top: 0.66rem;
+  width: 2.63rem;
+  height: 2.75rem;
+  /* padding-left: 0.88rem;
+  padding-top: 0.66rem; */
 }
 
 .info-input input {
