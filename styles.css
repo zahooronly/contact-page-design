@@ -8,24 +8,24 @@ body {
   padding: 0;
   margin: 0;
   font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
 
 main {
   padding: 3.125rem 2.0625rem;
   border-radius: 56px;
   background: linear-gradient(190deg, #f5fafb 47.27%, #e9f6f9 85.77%);
-  font-family: "Roboto", sans-serif;
 }
 
 form {
   width: 60.625rem;
   margin: auto;
-  display: flex;
   padding: 2rem;
+  display: flex;
   flex-direction: column;
   justify-content: start;
   gap: 2rem;
-  border-radius: 16px;
+  border-radius: 1rem;
   border: 1px solid #eaecf0;
   background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.5) 99.5%);
   box-shadow: 0 0.882px 1.568px 0 rgba(38, 44, 59, 0.02),
@@ -38,8 +38,8 @@ form {
 
 .input-part {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
   gap: 3rem;
 }
 
@@ -47,7 +47,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  width: 50%;
+  flex: 1;
 }
 
 /* Input Field Styling */
@@ -88,7 +88,7 @@ form {
   margin-bottom: 0.5rem;
 }
 .message {
-  width: 50%;
+  flex: 1;
 }
 
 textarea {
@@ -153,8 +153,8 @@ textarea:hover {
   align-items: center;
 }
 .button {
-  padding: 12px 100px;
-  border-radius: 8px;
+  padding: 0.75rem 6.25rem;
+  border-radius: 0.5rem;
   background: linear-gradient(127deg, #4e84e5 31.39%, #61baff 102.17%);
   border: none;
   color: white;
