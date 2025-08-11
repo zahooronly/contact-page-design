@@ -78,7 +78,6 @@ form {
   position: relative;
 }
 
-
 .input-container label,
 .message label {
   display: block;
@@ -97,7 +96,6 @@ textarea {
   box-shadow: 0 0 0 1px rgba(103, 110, 118, 0.16),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
-
 
 input,
 textarea {
@@ -125,7 +123,6 @@ textarea:focus {
   background: #fcfcfd;
 }
 
-
 .checkbox {
   display: flex;
   padding: 0.25rem 0;
@@ -142,7 +139,6 @@ textarea:focus {
   width: 20px;
   height: 20px;
 }
-
 
 .submit {
   display: flex;
@@ -161,6 +157,7 @@ textarea:focus {
   font-size: 1rem;
   transition-duration: 0.2s;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .button:hover {
