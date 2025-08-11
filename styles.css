@@ -124,7 +124,7 @@ textarea:hover {
 input[type="email"]:focus,
 input[type="text"]:focus,
 textarea:focus {
-  box-shadow: 0 0 0 3px #8d8d8d8e, 0 1px 1px 0 #6d6d6d83;
+  box-shadow: 0 0 0 1.5px #8d8d8d8e, 0 1px 1px 0 #6d6d6d83;
   transition-duration: 0.2s;
   background: #fcfcfd;
 }
@@ -162,7 +162,7 @@ textarea:focus {
   border-radius: 0.5rem;
   background: linear-gradient(127deg, #4e84e5 31.39%, #61baff 102.17%);
   border: none;
-  color: white;
+  color: #fcfcfd;
   font-weight: 600;
   font-size: 1rem;
   transition-duration: 0.2s;
@@ -172,5 +172,5 @@ textarea:focus {
 .button:hover {
   border: 1px solid #5480d1;
   color: #5480d1;
-  background: white;
+  background: #fcfcfd;
 }
