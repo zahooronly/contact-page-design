@@ -154,7 +154,9 @@ textarea:hover {
   align-items: center;
 }
 .button {
-  padding: 0.75rem 6.25rem;
+  padding: 0.75rem 0.25rem;
+  max-width: 21.37rem;
+  width: 100%;
   border-radius: 0.5rem;
   background: linear-gradient(127deg, #4e84e5 31.39%, #61baff 102.17%);
   border: none;
