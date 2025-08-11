@@ -60,8 +60,6 @@ form {
   position: absolute;
   width: 2.63rem;
   height: 2.75rem;
-  /* padding-left: 0.88rem;
-  padding-top: 0.66rem; */
 }
 
 .info-input input {
@@ -114,18 +112,19 @@ textarea {
   background: #fcfcfd;
 }
 
-input:hover,
+input[type="email"]:hover,
+input[type="text"]:hover,
 textarea:hover {
   transition-duration: 0.2s;
-  background-color: #6fc0fd2c;
+  background-color: #a8a7a72c;
 
-  box-shadow: 0 0 0 1px #5480d18e, 0 1px 1px 0 #1298ff83;
+  box-shadow: 0 0 0 1px #9494948e, 0 1px 1px 0 #b9b9b983;
 }
 
 input[type="email"]:focus,
 input[type="text"]:focus,
 textarea:focus {
-  box-shadow: 0 0 0 3px #5480d18e, 0 1px 1px 0 #1298ff83;
+  box-shadow: 0 0 0 3px #8d8d8d8e, 0 1px 1px 0 #6d6d6d83;
   transition-duration: 0.2s;
   background: #fcfcfd;
 }
@@ -167,13 +166,11 @@ textarea:focus {
   font-weight: 600;
   font-size: 1rem;
   transition-duration: 0.2s;
+  border: 1px solid transparent;
 }
 
 .button:hover {
-  background: linear-gradient(127deg, #5480d1 31.39%, #1298ff 102.17%);
-  box-shadow: 0 0 0 1px #5480d18e, 0 1px 1px 0 #1298ff83;
-}
-
-.button:active {
-  box-shadow: 0 0 0 3px #5480d18e, 0 1px 1px 0 #1298ff83;
+  border: 1px solid #5480d1;
+  color: #5480d1;
+  background: white;
 }
